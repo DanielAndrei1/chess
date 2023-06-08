@@ -5,16 +5,11 @@
     <title>Chess Game</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='chessStyle.css'>
     <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
         integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
-        crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
-        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
         crossorigin="anonymous"></script>
 </head>
 
@@ -25,10 +20,6 @@
    
 
 <?php
-$board = array(
-    8 => array(
-
-    ), 7, 6, 5, 4, 3, 2, 1);
 $boardSquareNumbers = array("h", "g", "f", "e", "d", "c", "b", "a");
 $boardColors = array("squarewhite", "squareblack");
 $piecesBlack = array("./Img/Castle.png", "./Img/KnightBlack.png","./Img/BishopBlack.png","./Img/Queen.png","./Img/King.png","./Img/BishopBlack.png","./Img/KnightBlack.png","./Img/Castle.png");
