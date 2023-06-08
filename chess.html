@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Chess Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='chessStyle.css'>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+        integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<h1 id="heading">Chess</h1>
+<div id="rownumbers">
+    <span>8</span>
+
+    <span>7</span>
+
+    <span>6</span>
+
+    <span>5</span>
+
+    <span>4</span>
+
+    <span>3</span>
+
+    <span>2</span>
+
+    <span>1</span>
+
+
+</div>
+   
+
+
+    <div id="board">
+
+        <div row="8" column="a" class="squareblack"><span>8a</span>
+            <div class="container" player="Black">8a</div><img src="./Img/Castle.png" class="PawnBlack">
+        </div>
+        <div row="8" column="b" class="squarewhite"><span>8b</span>
+            <div class="container" player="Black">8b</div><img src="./Img/KnightBlack.png" class="PawnBlack">
+        </div>
+        <div row="8" column="c" class="squareblack"><span>8c</span>
+            <div class="container" player="Black">8c</div><img src="./Img/BishopBlack.png" class="PawnBlack">
+        </div>
+        <div row="8" column="d" class="squarewhite"><span>8d</span>
+            <div class="container" player="Black">8d</div><img src="./Img/Queen.png" class="PawnBlack">
+        </div>
+        <div row="8" column="e" class="squareblack"><span>8e</span>
+            <div class="container" player="Black">8e</div><img src="./Img/King.png" class="PawnBlack">
+        </div>
+        <div row="8" column="f" class="squarewhite"><span>8f</span>
+            <div class="container" player="Black">8f</div><img src="./Img/BishopBlack.png" class="PawnBlack">
+        </div>
+        <div row="8" column="g" class="squareblack"><span>8g</span>
+            <div class="container" player="Black">8g</div><img src="./Img/KnightBlack.png" class="PawnBlack">
+        </div>
+        <div row="8" column="h" class="squarewhite"><span>8h</span>
+            <div class="container" player="Black">8h</div><img src="./Img/Castle.png" class="PawnBlack">
+        </div>
+        <div row="7" column="a" class="squarewhite"><span>7a</span>
+            <div class="container" player="Black">7a</div><img src="./Img/PawnBlack.png" id="pawn8Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="b" class="squareblack"><span>7b</span>
+            <div class="container" player="Black">7b</div><img src="./Img/PawnBlack.png" id="pawn7Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="c" class="squarewhite"><span>7c</span>
+            <div class="container" player="Black">7c</div><img src="./Img/PawnBlack.png" id="pawn6Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="d" class="squareblack"><span>7d</span>
+            <div class="container" player="Black">7d</div><img src="./Img/PawnBlack.png" id="pawn5Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="e" class="squarewhite"><span>7e</span>
+            <div class="container" player="Black">7e</div><img src="./Img/PawnBlack.png" id="pawn4Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="f" class="squareblack"><span>7f</span>
+            <div class="container" player="Black">7f</div><img src="./Img/PawnBlack.png" id="pawn3Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="g" class="squarewhite"><span>7g</span>
+            <div class="container" player="Black">7g</div><img src="./Img/PawnBlack.png" id="pawn2Black"
+                class="PawnBlack">
+        </div>
+        <div row="7" column="h" class="squareblack"><span>7h</span>
+            <div class="container" player="Black">7h</div><img src="./Img/PawnBlack.png" id="pawn1Black"
+                class="PawnBlack">
+        </div>
+        <div row="6" column="a" class="squareblack">6a<div class="container" player="">6a</div>
+        </div>
+        <div row="6" column="b" class="squarewhite">6b<div class="container" player="">6b</div>
+        </div>
+        <div row="6" column="c" class="squareblack">6c<div class="container" player="">6c</div>
+        </div>
+        <div row="6" column="d" class="squarewhite">6d<div class="container" player="">6d</div>
+        </div>
+        <div row="6" column="e" class="squareblack">6e<div class="container" player="">6e</div>
+        </div>
+        <div row="6" column="f" class="squarewhite">6f<div class="container" player="">6f</div>
+        </div>
+        <div row="6" column="g" class="squareblack">6g<div class="container" player="">6g</div>
+        </div>
+        <div row="6" column="h" class="squarewhite">6h<div class="container" player="">6h</div>
+        </div>
+        <div row="5" column="a" class="squarewhite">5a<div class="container" player="">5a</div>
+        </div>
+        <div row="5" column="b" class="squareblack">5b<div class="container" player="">5b</div>
+        </div>
+        <div row="5" column="c" class="squarewhite">5c<div class="container" player="">5c</div>
+        </div>
+        <div row="5" column="d" class="squareblack">5d<div class="container" player="">5d</div>
+        </div>
+        <div row="5" column="e" class="squarewhite">5e<div class="container" player="">5e</div>
+        </div>
+        <div row="5" column="f" class="squareblack">5f<div class="container" player="">5f</div>
+        </div>
+        <div row="5" column="g" class="squarewhite">5g<div class="container" player="">5g</div>
+        </div>
+        <div row="5" column="h" class="squareblack">5h<div class="container" player="">5h</div>
+        </div>
+        <div row="4" column="a" class="squareblack four">4a<div class="container">4a</div>
+        </div>
+        <div row="4" column="b" class="squarewhite four">4b<div class="container">4b</div>
+        </div>
+        <div row="4" column="c" class="squareblack">4c<div class="container">4c</div>
+        </div>
+        <div row="4" column="d" class="squarewhite">4d<div class="container">4d</div>
+        </div>
+        <div row="4" column="e" class="squareblack">4e<div class="container">4e</div>
+        </div>
+        <div row="4" column="f" class="squarewhite">4f<div class="container">4f</div>
+        </div>
+        <div row="4" column="g" class="squareblack">4g<div class="container">4g</div>
+        </div>
+        <div row="4" column="h" class="squarewhite">4h<div class="container">4h</div>
+        </div>
+        <div row="3" column="a" class="squarewhite tree" id="treeA">3a<div class="container">3a</div>
+        </div>
+        <div row="3" column="b" class="squareblack tree">3b<div class="container">3b</div>
+        </div>
+        <div row="3" column="c" class="squarewhite tree">3c<div class="container">3c</div>
+        </div>
+        <div row="3" column="d" class="squareblack tree">3d<div class="container">3d</div>
+        </div>
+        <div row="3" column="e" class="squarewhite tree">3e<div class="container">3e</div>
+        </div>
+        <div row="3" column="f" class="squareblack tree">3f<div class="container">3f</div>
+        </div>
+        <div row="3" column="g" class="squarewhite tree">3g<div class="container">3g</div>
+        </div>
+        <div row="3" column="h" class="squareblack tree">3h<div class="container">3h</div>
+        </div>
+        <div row="2" column="a" class="squareblack two"><span>2a</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn8" class="PawnWhite pawn"
+                draggable="true">
+        </div>
+        <div row="2" column="b" class="squarewhite two" id="twoB"><span>2b</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn7" class="PawnWhite" draggable="true">
+        </div>
+        <div row="2" column="c" class="squareblack two"><span>2c</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn6" class="PawnWhite" draggable="true">
+        </div>
+        <div row="2" column="d" class="squarewhite two"><span>2d</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn5" class="PawnWhite" draggable="true">
+        </div>
+        <div row="2" column="e" class="squareblack two"><span>2e</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn4" class="PawnWhite" draggable="true">
+        </div>
+        <div row="2" column="f" class="squarewhite two"><span>2f</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn3" class="PawnWhite" draggable="true">
+        </div>
+        <div row="2" column="g" class="squareblack two"><span>2g</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn2" class="PawnWhite" draggable="true">
+        </div>
+        <div row="2" column="h" class="squarewhite two"><span>2h</span>
+            <div class="container"></div><img src="./Img/PawnWhite.png" id="pawn1" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="a" class="squarewhite one"><span>1a</span>
+            <div class="container">1a</div><img src="./Img/RookWhite.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="b" class="squareblack one"><span>1b</span>
+            <div class="container">1b</div><img src="./Img/KnightWhite.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="c" class="squarewhite one"><span>1c</span>
+            <div class="container">1c</div><img src="./Img/BishopWhite.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="d" class="squareblack one"><span>1d</span>
+            <div class="container">1d</div><img src="./Img/QueenWhite.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="e" class="squarewhite one"><span>1e</span>
+            <div class="container">1e</div><img src="./Img/KingWhite2.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="f" class="squareblack one"><span>1f</span>
+            <div class="container">1f</div><img src="./Img/BishopWhite.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="g" class="squarewhite one"><span>1g</span>
+            <div class="container">1g</div><img src="./Img/KnightWhite.png" class="PawnWhite" draggable="true">
+        </div>
+        <div row="1" column="h" class="squareblack one"><span>1h</span>
+            <div class="container">1h</div><img src="./Img/RookWhite.png" class="PawnWhite" draggable="true">
+        </div>
+    </div>
+
+    <div id="columns">
+        <h1>a</h1>
+        <h1>b</h1>
+        <h1>c</h1>
+        <h1>d</h1>
+        <h1>e</h1>
+        <h1>f</h1>
+        <h1>g</h1>
+        <h1>h</h1>
+
+    </div>
+    
+    <div id="results"></div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script async src="chess1.js"></script>
+
+</body>
+
+</html>

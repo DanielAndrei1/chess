@@ -1,0 +1,495 @@
+body{
+    background-color: antiquewhite;
+}
+.padding {
+    margin-top: 10px;
+}
+
+.padding:hover{
+    background-color: turquoise;
+}
+
+body, ul{
+    padding: 0px;
+    margin: 0px; 
+}
+
+#heading{
+   
+    margin-left: 36px;
+}
+
+li {
+    display: inline-block;
+    float: none;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+
+ul {
+
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+ul li a:hover{
+    background-color: forestgreen;
+    padding: 16px 18px;
+
+}
+
+ul li a.active{
+    padding: 16px 18px;
+    background-color: goldenrod;
+}
+
+#div2 {
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+#label {
+    color: white;
+    background-color: Black;
+    border-radius: 4px;
+    position:relative;
+    bottom: 5px;
+}
+
+#game {
+    margin-top:20px;
+    width:auto;
+    height:500px;
+    border: aquamarine solid;
+
+}
+
+#image {
+    position: relative;
+   
+
+}
+
+
+#columns {
+    display: inline-block;
+    position: relative;
+    top: -401px;
+    right: -442px;
+    padding-left: 4.8%;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+
+#columns h1{
+    font-size: 44px;
+    transform: rotate(-270deg);
+    padding-top: 21px;
+}
+
+
+
+#a, #b, #c, #d, #e, #f, #g, #h{
+    margin-top: -5px;
+
+
+}
+
+.PawnWhite {
+    margin-left:18px;
+    width: 6vmin;
+    height: 6vmin;
+    z-index: 1;
+    
+
+}
+
+.PawnBlack {
+    margin-left:18px;
+    position: relative;
+    z-index: 1;
+   
+
+}
+
+.container{
+    position: absolute;
+    padding-bottom:8.5%;
+
+}
+
+.test {
+    background-color: aqua;
+}
+
+
+span {
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width:199px) and (max-device-width: 319px)  {
+ 
+
+
+}
+
+@media only screen and (min-width:320px) and (max-device-width: 424px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+
+
+}
+
+@media only screen and (min-width:425px) and (max-device-width: 599px)  {
+  
+
+
+
+}
+@media only screen and (min-width:600px) and (max-device-width: 800px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    
+    #board {
+
+        height: 50vmin !important ;
+        width: 96vmin;
+        border: black solid;
+        margin: 0 0 20px 20px;
+        position: relative;
+        margin-left: 5%;
+        overflow: hidden;
+       
+    }
+    .squarewhite {
+        height: 12.5%;
+        width:  12.2%;
+        display: inline-block;
+        background-color: rgb(247, 247, 243);
+        position: relative;
+    
+    }
+    
+    .squareblack {
+        height: 12.5%;
+        width:  11.85%;
+        display: inline-block;   
+         background-color: rgb(172, 119, 5);
+        position: relative;
+    
+    }
+
+    .PawnWhite {
+        width: 6vmin;
+        height: 6vmin;
+        
+    
+    }
+    
+    .PawnBlack {
+        position: relative;
+        z-index: 1;
+        width: 6vmin;
+        height: 6vmin;
+    }
+
+    #rownumbers {
+        float: left;
+        transform: rotate(90deg);
+        font-size: 44px;
+        margin-top: 174px;
+        position: absolute;
+        left: -156px;
+    }
+    
+    
+    
+    #rownumbers span{
+        transform: rotate(-89deg);
+        padding-right: 14px;
+    }
+
+    #columns {
+        display: inline-block;
+    position: relative;
+    top: -385px;
+    right: -382px;
+    padding-left: 4.8%;
+    transform: rotate(-90deg);
+    z-index: -1;
+    }
+    #columns h1 {
+        font-size: 40px;
+        transform: rotate(-270deg);
+        padding-top: 21px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width:801px) and (max-device-width: 1023px)   { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+    #board {
+
+        height: 50vmin !important ;
+        width: 96vmin;
+        border: black solid;
+        margin: 0 0 20px 20px;
+        position: relative;
+        margin-left: 5%;
+        overflow: hidden;
+       
+    }
+    .squarewhite {
+        height: 12.5%;
+        width:  12.2%;
+        display: inline-block;
+        background-color: rgb(247, 247, 243);
+        position: relative;
+    
+    }
+    
+    .squareblack {
+        height: 12.5%;
+        width:  11.85%;
+        display: inline-block;   
+         background-color: rgb(172, 119, 5);
+        position: relative;
+    
+    }
+
+    .PawnWhite {
+        width: 6vmin;
+        height: 6vmin;
+        
+    
+    }
+    
+    .PawnBlack {
+        position: relative;
+        z-index: 1;
+        width: 6vmin;
+        height: 6vmin;
+    }
+
+    #rownumbers {
+        float: left;
+        transform: rotate(90deg);
+        font-size: 44px;
+        margin-top: 174px;
+        position: absolute;
+        left: -156px;
+    }
+    
+    
+    
+    #rownumbers span{
+        transform: rotate(-89deg);
+        padding-right: 14px;
+    }
+
+    #columns {
+        display: inline-block;
+    position: relative;
+    top: -385px;
+    right: -382px;
+    padding-left: 4.8%;
+    transform: rotate(-90deg);
+    z-index: -1;
+    }
+    #columns h1 {
+        font-size: 40px;
+        transform: rotate(-270deg);
+        padding-top: 21px;
+    }
+
+
+}
+@media only screen and (min-width:1024px) and (max-device-width: 1439px){ /* big landscape tablets, laptops, and desktops */ 
+    #board {
+
+        height: auto ;
+        width: 100vmin;
+        border: black solid;
+        margin: 0 0 20px 20px;
+        position: relative;
+        margin-left: 5%;
+        overflow: hidden;
+       
+    }
+    .squarewhite{
+        height: 12.5%;
+        width:  11.8%;
+        display: inline-block;
+        background-color: rgb(247, 247, 243);
+        position: relative;
+    
+    }
+    
+    .squareblack {
+        height: 12.5%;
+        width:  12.3%;
+        display: inline-block;   
+         background-color: rgb(172, 119, 5);
+        position: relative;
+    
+    }
+    #rownumbers {
+        float: left;
+        transform: rotate(90deg);
+        font-size: 44px;
+        margin-top: 193px;
+        position: absolute;
+        left: -139px;
+    }
+    #columns {
+        top: -493px;
+    }
+    #columns h1{
+        padding-top: 41px;
+
+
+    }
+    
+    #rownumbers span{
+        transform: rotate(-89deg);
+        padding-right: 20px;
+    }
+
+
+}
+
+@media only screen and (min-width:1440px) and (max-device-width: 2000px){ 
+    #board{
+        height: auto !important;
+        width: 78%;
+        border: black solid;
+        margin: 0 0 20px 20px;
+        position: relative;
+        margin-left: 6%;
+        overflow: hidden;
+        }
+        .squarewhite{
+            height: 12.5%;
+            width:  12.00%;
+            display: inline-block;
+            background-color: rgb(247, 247, 243);
+            position: relative;
+        
+        }
+        
+        .squareblack {
+            height: 12.5%;
+            width:  12.39%;
+            display: inline-block;   
+             background-color: rgb(172, 119, 5);
+            position: relative;
+        
+        }
+        #rownumbers {
+            float: left;
+            transform: rotate(90deg);
+            font-size: 237%;
+            margin-top: 12%;
+            position: absolute;
+            left: -155px;
+        }
+        
+        
+        #rownumbers span{
+        transform: rotate(-89deg);
+        padding-right: 37px;
+        }
+    
+        #columns {
+            display: inline-block;
+            position: relative;
+            top: -546px;
+            right: -617px;
+            padding-left: 4.8%;
+            transform: rotate(-90deg);
+        }
+       
+        
+        #columns h1{
+            font-size: 44px;
+            transform: rotate(-270deg);
+            padding-top: 61px;
+        }
+        
+
+}
+
+
+    
+@media only screen and (min-width:2001px) and (max-device-width: 3000px){ 
+
+        #board {
+    
+            height: auto ;
+            width: 100vmin;
+            border: black solid;
+            margin: 0 0 20px 20px;
+            position: relative;
+            margin-left: 5%;
+            overflow: hidden;
+           
+        }
+        .squarewhite {
+            height: 12.5%;
+            width:  11.99%;
+            display: inline-block;
+            background-color: rgb(247, 247, 243);
+            position: relative;
+        
+        }
+        
+        .squareblack {
+            height: 12.5%;
+            width:  12.5%;
+            display: inline-block;   
+             background-color: rgb(172, 119, 5);
+            position: relative;
+        
+        }
+        #rownumbers {
+            float: left;
+            transform: rotate(90deg);
+            font-size: 44px;
+            margin-top: 399px;
+            position: absolute;
+            left: -269px;
+        }
+        
+        
+        
+        #rownumbers span{
+            transform: rotate(-89deg);
+            padding-right: 71px;
+        }
+        #columns {
+            display: inline-block;
+            position: relative;
+            top: -866px;
+            right: -868px;
+            padding-left: 4.8%;
+            transform: rotate(-90deg);
+        }
+        
+        #columns h1{
+            font-size: 44px;
+            transform: rotate(-270deg);
+            padding-top: 131px;
+        }
+    
+
+
+}
+
+
