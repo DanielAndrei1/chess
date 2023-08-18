@@ -78,13 +78,10 @@ span {
     height: 8vmin;
 }
 
-.Active0{
+.Active{
     background-color: yellow;
 }
 
-.Active1{
-    background-color: yellow;
-}
 
 @media only screen and (min-width:199px) and (max-device-width: 319px)  {
  

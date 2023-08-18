@@ -43,8 +43,8 @@ $containerBool = false;
                                                                         <?php 
                                                                               if ($i == 8 || $i == 7) {echo "PlayerBlack";}
                                                                               else if($i == 2 || $i == 1) {echo "PlayerWhite";}
-                                                                              if ($i == 2) { echo " Pawn";}
-                                                                              if ($i == 7) { echo " Pawn";} 
+                                                                              if ($i == 2) { echo " PawnWhite";}
+                                                                              if ($i == 7) { echo " PawnBlack";} 
                                                                               if($i == 8 || $i == 1){
                                                                               switch($i . $boardSquareNumbers[$j-1]){
                                                                                 case '1a':
@@ -137,7 +137,7 @@ $containerBool = false;
     <div id="results"></div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script async src="chess.js"></script>
+    <script async type="module"  src="./src/main.js"></script>
 
 </body>
 
